@@ -1,0 +1,163 @@
+
+
+
+/* Navbar */
+#mainNav {
+  background-color:  #6b756d;
+  transition: top 0.3s;
+  position: fixed;
+  width: 100%;
+  height: 8%;
+}
+
+#mainNav.navbar-shrink .navbar-brand,
+#mainNav.navbar-shrink .nav-link {
+  color: aliceblue;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: white;
+}
+
+.navbar li {
+  margin: 10px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.navbar-nav {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.text-center {
+  color: white;
+}
+
+@media (max-width: 320px) {
+  .navbar .nav-item a {
+    font-size: 20px;
+  }
+}
+
+/* Content */
+.edit{
+margin-top: 6%;
+background-color: rgba(87, 77, 77, 0.6);
+height: 150px;
+font-style: italic;
+}
+
+.edit h1 {
+  position: relative;
+  top: 10%;
+  font-size: 90px;
+  text-align: center;
+  color: white;
+}
+
+.contenido_examen {
+  padding: 1.5rem;
+  max-width: 60rem;
+  width: 100%;
+  background-color: white;
+  border-radius: 2rem;
+  margin: 4rem auto;
+  box-shadow:
+      rgba(0, 0, 0, 0.05) 0px 6px 24px 0px;
+
+}
+.contenido_examen h1{
+  margin-bottom: 1.5rem;
+  font-size: 4rem;
+  display: flex;
+  color: rgb(60, 59, 59);
+  gap: 0.25rem;
+  justify-content: center;
+}
+
+#stocks {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.pregunta {
+  position: relative;
+  z-index: 1;
+  min-height: 3.75rem;
+  display: block;
+  flex-wrap: wrap;
+  gap: 1rem;
+  border-radius: 1.5rem;
+  font-size: 1.2rem;
+  padding: 1rem;
+  align-items: center;
+  background-color: var(--white);
+  box-shadow:
+      rgba(0, 0, 0, 0.05) 0px 6px 24px 0px;
+}
+
+.pregunta:hover{
+  cursor: grab;
+}
+
+/* Estilo de la ventana flotante */
+.modal {
+  position: fixed;
+  z-index: 1; /* Sitúa la ventana modal por encima de todo lo demás en la página */
+  left: 0;
+  top: 0;
+  width: 100%; /* Anchura completa */
+  height: 100%; /* Altura completa */
+  overflow: auto; /* Habilita el desplazamiento si es necesario */
+  background-color: rgba(0,0,0,0.4); /* Color de fondo con opacidad (negro transparente) */
+  display: flex; /* Centra la ventana modal */
+  align-items: center;
+  justify-content: center;
+}
+
+/* Contenido de la ventana modal */
+.modal-content {
+  width: 700px !important; /* Ancho de la ventana modal */
+  height: 500px !important; /* Altura de la ventana modal */
+  background-color: white;
+  padding: 50px;
+  border: 1px solid #888;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+/* Botón de cierre */
+.closeButton {
+  color: rgb(119, 110, 110);
+  background-color: transparent; /* Color de fondo inicialmente transparente */
+  border-style: none;
+  float: right; /* Alinea el botón a la derecha */
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute; /* Posiciona el botón de manera absoluta dentro de la ventana modal */
+  top: 10px; /* Posiciona el botón en la parte superior de la ventana modal */
+  left: 10px; /* Posiciona el botón en la parte izquierda de la ventana modal */
+}
+
+.closeButton:hover {
+  color: red; /* Cambia el color de fondo a rojo cuando se pasa el cursor sobre el botón */
+}
+
+.saveButton {
+  color: white;
+  background-color: green;
+  border: none;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
