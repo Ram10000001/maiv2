@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import api from "../api";
 import Note from "../components/Note";
-import "../styles/Home.css"
+import "../styles/Home.css";
+import Navbar from "../components/NavBar.jsx";
 
 function Home() {
   const [notes, setNotes] = useState([]);
@@ -48,6 +49,7 @@ function Home() {
 
   return (
     <div>
+      <Navbar />
       <div>
         <h2>Notes</h2>
         {notes.map((note) => (
