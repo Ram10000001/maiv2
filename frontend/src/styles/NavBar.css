@@ -5,6 +5,15 @@
   --color-fondo: white;
 }
 
+.navbar {
+  background-color: var(--color-primario); /* Aplica el color primario como fondo del navbar */
+}
+
+.navbar a {
+  color: var(--color-fondo);
+  text-decoration: none;
+}
+
 /*--- Estilo de navbar --- */
 #mainNav.navbar-shrink {
   background-color: var(--color-terceario);
